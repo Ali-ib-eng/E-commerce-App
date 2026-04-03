@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/admin.css">
+    <link rel="shortcut icon" href="./icons/control_panel_icon.png" type="image/x-icon">
+    <title>Admin panel</title>
+</head>
+<header>
+    <nav class="adminNav">
+        <a class="btnStore" href="./index.html" style="text-decoration: none;">Back to store</a>
+      </nav>
+</header>
+<body>
+    <div class="adminContainer">
+        <form id="addForm">
+        <label>Product name</label>
+        <input type="text"  id="addnewProduct" placeholder="product name" class="wide" required>
+        <label >Price</label>
+        <input type="text"  id="addnewPrice" placeholder="price $" class="wide" required >
+        <label for="selectCategory">Category</label>
+        <select id="selectCategory" class="wide" required>
+        <option value="clothes">clothes</option>
+        <option value="Electronical">Electronical</option>
+        <option value="Accessories">Accessories</option>
+        </select>
+        <label>Photo link</label>
+        <input type="url" id="addURL" placeholder="example:www.vecteezy.com/free-photos" class="wide" required>
+        <input type="submit" value="Add product"  class="wide f-s16 submitbtn">
+    </form>
+    </div>
+    <div class="admintable">
+        <h2 class="myproductletter">My Product</h2>
+        <div class="mytable">
+            <table id="dataTable">
+        <thead>
+            <tr>
+                <th>PRODUCT NAME</th>
+                <th>PRICE</th>
+                <th>CATEGORY</th>
+                <th>PROCEDURES</th>
+            </tr>
+        </thead>
+        <!--I will add by js-->
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+        </div>
+    </div>
+
+    <script src="./JS/admin.js"></script>
+</body>
+</html>

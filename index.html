@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./icons/e-commerce.webp" type="image/x-icon">
+    <title>E-commerce app</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Store</h1>
+            </div>
+                <ul class="Admin-link">
+                    <li><a href="admin.html">Admin panel</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="searchfilterorder" >
+        
+            <form class="searchforProducts">
+            <label for="searchInput" class="searchLabel">search for product by name:</label><br>
+            <input type="text" id="searchInput" class="searchInput" >
+            <!--<input type="submit" value="Search" class="searchBtn">-->
+        </form>
+        <div class="categoryFilter">
+      <label for="categoryFilter">category Filter:</label>
+      <div id="categoryFilter">
+        <select id="selectcategory">
+        <option value="all">All</option>
+        <option value="clothes">clothes</option>
+        <option value="Electronical">Electronical</option>
+        <option value="Accessories">Accessories</option>
+      </select>
+      </div>
+    </div>
+        <div class="orderbyPrice">
+      <label for="orderbyPrice">order by Price:</label>
+      <div id="orderbyPrice">
+        <select id="selectOrder">
+        <option value="unorder">unorder</option>
+        <option value="asc">low to high</option>
+        <option value="desc">high to low</option>
+      </select>
+      </div>
+    </div>
+    </section>
+    <section class="cards">
+        <h2 class="productlabel">products</h2>
+        <div class="cardscontainer">
+        </div>
+    </section>
+    <section class="slidersection">
+        <h2 class="productlabel">products slider</h2>
+            <div class="slidercontainer">
+            <div class="sliders"></div>
+            <div class="btns">
+                <button class="prevBtn" id="prevBtn" ><i class="fa-solid fa-arrow-left fa-xl"></i></button>
+                <button class="nextBtn" id="nextBtn" ><i class="fa-solid fa-arrow-right fa-xl"></i></button>
+            </div>
+            </div>
+        
+    </section>
+    <script src="./JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/0e6b3a7254.js" crossorigin="anonymous"></script>
+</body>
+</html>
