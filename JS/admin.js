@@ -86,7 +86,7 @@ const editbtn=(id)=>{
     //console.log(lineinfo)
     editBtnid=id;
     const product=products.find(product=>product.id==id);
-    console.log(product)
+    //console.log(product)
     productName.value=product.name;
     productPrice.value=product.price;
     imgLink.value=product.img;
@@ -101,4 +101,4 @@ localStorage.setItem("products",JSON.stringify(products))
 readTable();
 }
 readTable();
-console.log(products);
+//console.log(products);

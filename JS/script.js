@@ -156,7 +156,7 @@ else{
     count--;
 } 
 moveSlides(count);
-console.log("prev",count)
+//console.log("prev",count)
 })
 
     nextBtn.addEventListener("click",()=>{
@@ -166,7 +166,7 @@ console.log("prev",count)
             count++;
         } 
         moveSlides(count);
-        console.log("next",count)
+        //console.log("next",count)
     })
 //clickprevButton();
 //clicknextButton();
