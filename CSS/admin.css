@@ -1,5 +1,5 @@
 /*Admin panel styling*/
-*{
+/**{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -56,14 +56,14 @@ select option{
     padding: 16px;
     border-radius: 18px;
     border:black solid 2px;
-    /*border-radius: 18px;*/
+    
 }
 .submitbtn:hover {
     animation: pulseGlow 1s infinite;
     background-color: rgba(0, 128, 0, 0.444);
 }
 .admintable{
-    /*height: 80vh;*/
+   
     width:100%;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ select option{
     font-size: 20px;
 }
 .mytable{
-    /*width:100%;*/
+   
     height:auto;
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@ select option{
 }
 .prod-name-cell{
     display: flex;
-    /*justify-content: center;*/
+    
     align-items: center;
 }
 .table-img{
@@ -98,9 +98,6 @@ select option{
     margin-right: 15px;
     vertical-align: middle;
 }
-/*tr{
-    width: 100%;
-}*/
 th{
     font-size: 0.8em;
     padding: 15px;
@@ -109,9 +106,6 @@ th{
     background-color: rgba(0, 128, 0, 0.658);
     border-radius: 9px;
 }
-/*th:first-child{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;}*/
 td{
     padding: 20px 15px;
     border-bottom: 1px solid rgba(4, 4, 4, 0.729);
@@ -141,4 +135,269 @@ button{
     100% {
         box-shadow: 0 0 5px rgb(7, 138, 2);
     }
+}*/
+/*Admin panel styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.f-s16{
+font-size: 16px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    height: 5vh;
+}
+.adminNav{
+    margin-left: 78px;
+    margin-top:40px;
+}
+.btnStore{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 128, 0, 0.532);
+    border-radius: 10px;
+    color:black;
+}
+.adminContainer{
+    min-height: 60vh;
+    background-color: rgba(0, 0, 255, 0.592);
+    padding: 80px;
+}
+label{
+    display: block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#addForm{
+ display: flex;
+ flex-direction: column;
+ gap:16px;
+ max-width: 500px;
+ margin: 0 auto;
+}
+::placeholder{
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+select{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+select option{
+    background-color: rgba(0, 0, 0, 0.534);
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wide{
+    width: 100%;
+    padding: 16px;
+    border-radius: 18px;
+    border:black solid 2px;
+}
+.submitbtn:hover {
+    animation: pulseGlow 1s infinite;
+    background-color: rgba(0, 128, 0, 0.444);
+}
+.admintable{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0 48px;
+    background-color: rgba(0, 0, 255, 0.29);
+}
+.myproductletter{
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+.mytable{
+    width:90%;
+    max-width: 900px;
+    height:auto;
+    display: block;
+}
+#dataTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+.prod-name-cell{
+    display: flex;
+    align-items: center;
+}
+.table-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+th{
+    font-size: 0.8em;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    background-color: rgba(0, 128, 0, 0.658);
+    border-radius: 9px;
+}
+td{
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(4, 4, 4, 0.729);
+    vertical-align: middle;
+}
+.actionsCell{
+    display: flex;
+    gap: 8px;
+}
+button{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.editbtn{
+    background-color: rgba(0, 128, 0, 0.77);
+}
+.deletebtn{
+    background-color: rgba(255, 0, 0, 0.827);
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(205, 5, 5, 0.636);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(69, 1, 146);
+    }
+    100% {
+        box-shadow: 0 0 5px rgb(7, 138, 2);
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Tablet landscape / small laptop (<= 992px)
+   ============================================================ */
+@media (max-width: 992px) {
+    .adminNav{
+        margin-left: 32px;
+        margin-top: 24px;
+    }
+    .adminContainer{
+        padding: 48px 32px;
+    }
+    .mytable{
+        width: 100%;
+    }
+    th{
+        font-size: 0.75em;
+        padding: 12px;
+    }
+    td{
+        padding: 16px 12px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Tablet portrait (<= 768px)
+   Table switches from a grid to a stacked "card" layout,
+   since a 4-column table no longer fits comfortably.
+   ============================================================ */
+@media (max-width: 768px) {
+    .adminNav{
+        margin: 16px;
+        text-align: center;
+    }
+    .adminContainer{
+        padding: 32px 20px;
+    }
+    #addForm{
+        max-width: 100%;
+    }
+
+    /* --- stacked table --- */
+    #dataTable, #dataTable thead, #dataTable tbody,
+    #dataTable th, #dataTable td, #dataTable tr{
+        display: block;
+    }
+    #dataTable thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #dataTable tr{
+        margin-bottom: 16px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.35);
+    }
+    #dataTable td{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+        border-bottom: 1px solid rgba(4, 4, 4, 0.15);
+        text-align: right;
+    }
+    #dataTable td:last-child{
+        border-bottom: none;
+    }
+    #dataTable td::before{
+        content: attr(data-label);
+        font-weight: 600;
+        font-size: 0.75em;
+        color: #1a1a2e;
+        white-space: nowrap;
+    }
+    .actionsCell{
+        gap: 8px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE — Mobile (<= 576px)
+   ============================================================ */
+@media (max-width: 576px) {
+    .btnStore{
+        font-size: 16px;
+        padding: 8px;
+    }
+    .adminContainer{
+        padding: 24px 14px;
+    }
+    #addForm{
+        gap: 12px;
+    }
+    .wide{
+        padding: 12px;
+        border-radius: 12px;
+    }
+    .mytable{
+        width: 100%;
+    }
+    .myproductletter{
+        font-size: 18px;
+    }
+    .table-img{
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+    }
+    #dataTable td{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    #dataTable td::before{
+        margin-bottom: 2px;
+    }
+    .actionsCell{
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
